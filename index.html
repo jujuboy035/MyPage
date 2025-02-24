@@ -1,37 +1,255 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>自己紹介・ポートフォリオ</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王小明 - 交互设计师</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2d3436;
+            --accent: #6c5ce7;
+            --light: #f8f9fa;
+            --gradient: linear-gradient(135deg, #6c5ce7 0%, #a66efa 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background: var(--light);
+            color: var(--primary);
+            line-height: 1.7;
+        }
+
+        /* 现代页头 */
+        .hero {
+            text-align: center;
+            padding: 6rem 2rem;
+            background: var(--gradient);
+            color: white;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            margin-bottom: 4rem;
+        }
+
+        .avatar {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 3px solid rgba(255,255,255,0.2);
+            margin: 1rem auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        /* 内容容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* 卡片样式 */
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+
+        /* 个人信息双栏布局 */
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin: 2rem 0;
+        }
+
+        /* 技能进度条 */
+        .skill-bar {
+            height: 12px;
+            background: #eee;
+            border-radius: 6px;
+            margin: 1rem 0;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: var(--gradient);
+            border-radius: 6px;
+            transition: width 1s ease-in-out;
+        }
+
+        /* 时间轴样式 */
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            margin: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: var(--accent);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 30px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            background: white;
+            border: 3px solid var(--accent);
+            border-radius: 50%;
+        }
+
+        /* 联系方式样式 */
+        .contact-list {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            text-align: center;
+            padding: 1rem;
+            transition: transform 0.3s;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .profile-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero {
+                padding: 4rem 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>あなたの名前</h1>
-    <p>就活・ポートフォリオサイト</p>
-  </header>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <div class="container">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>ここに自己紹介や経歴、スキルなどを記載します。自分がどのような人物であるか、どんな経験や学びがあるかを分かりやすくまとめましょう。</p>
-    </section>
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>これまでに取り組んだプロジェクトや成果物を紹介するエリアです。プロジェクトの概要やリンク、画像などを挿入することで、実績を具体的に伝えることができます。</p>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>メールアドレスやSNSリンクなど、採用担当者が連絡を取るための情報を記載してください。</p>
-    </section>
-  </div>
-  <footer>
-    <p>&copy; 2025 あなたの名前</p>
-  </footer>
+    <header class="hero">
+        <img src="avatar.jpg" alt="王小明" class="avatar">
+        <h1>王小明</h1>
+        <p>交互设计师 | 用户体验专家</p>
+    </header>
+
+    <div class="container">
+        <!-- 个人信息 -->
+        <div class="card">
+            <h2>👨💻 个人介绍</h2>
+            <div class="profile-grid">
+                <div>
+                    <h3>基本信息</h3>
+                    <ul>
+                        <li><i class="fas fa-birthday-cake"></i> 28岁</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 上海</li>
+                        <li><i class="fas fa-graduation-cap"></i> 清华大学 设计学硕士</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>兴趣爱好</h3>
+                    <ul>
+                        <li><i class="fas fa-palette"></i> 数字绘画</li>
+                        <li><i class="fas fa-camera-retro"></i> 街头摄影</li>
+                        <li><i class="fas fa-book-open"></i> 交互设计研究</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 技能展示 -->
+        <div class="card">
+            <h2>🚀 专业技能</h2>
+            <div>
+                <h3>用户体验设计 <span>90%</span></h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                </div>
+
+                <h3>Figma原型设计 <span>85%</span></h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                </div>
+
+                <h3>前端开发 <span>75%</span></h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 求职活动 -->
+        <div class="card">
+            <h2>📅 就职进展</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>收到Offer - ABC科技</h3>
+                    <p>2023-08-25</p>
+                    <p>高级交互设计师岗位</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>最终面试 - XYZ设计</h3>
+                    <p>2023-08-20</p>
+                    <p>用户体验团队面试</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 联系方式 -->
+        <div class="card">
+            <h2>📱 联系我</h2>
+            <div class="contact-list">
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <p>wangxm@design.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                    <p>/wangxiaoming</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github contact-icon"></i>
+                    <p>github.com/wxm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 进度条动画
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.skill-progress').forEach(progress => {
+                progress.style.width = progress.parentElement.previousElementSibling.querySelector('span').textContent;
+            });
+        });
+    </script>
 </body>
 </html>
