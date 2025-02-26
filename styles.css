@@ -94,10 +94,9 @@ body {
 }
 
 .hero {
-    min-width: 670px;
     background: var(--gradient);
     color: white;
-    padding-top: 4rem;
+    padding-top: 5rem;
     display: flex;
     justify-content: center;
     /* 让整个 .hero-container 居中 */
@@ -105,8 +104,7 @@ body {
 
 .hero-container {
     max-width: 580px;
-    margin: 5rem auto;
-    padding-left: auto;
+    margin: 3.5rem auto;
     display: flex;
     align-items: center;
 }
