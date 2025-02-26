@@ -10,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    
 }
 
 body {
@@ -93,11 +94,14 @@ body {
 }
 
 .hero {
+    max-width: 1200px;
+    min-width: 670px;
     background: var(--gradient);
     color: white;
     padding-top: 4rem;
     display: flex;
     justify-content: center;
+    /* 让整个 .hero-container 居中 */
 }
 
 .hero-container {
