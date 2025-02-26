@@ -94,7 +94,6 @@ body {
 }
 
 .hero {
-    max-width: 1200px;
     min-width: 670px;
     background: var(--gradient);
     color: white;
