@@ -1,255 +1,166 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="jp-JP">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>王小明 - 交互设计师</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        :root {
-            --primary: #2d3436;
-            --accent: #6c5ce7;
-            --light: #f8f9fa;
-            --gradient: linear-gradient(135deg, #6c5ce7 0%, #a66efa 100%);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-
-        body {
-            background: var(--light);
-            color: var(--primary);
-            line-height: 1.7;
-        }
-
-        /* 现代页头 */
-        .hero {
-            text-align: center;
-            padding: 6rem 2rem;
-            background: var(--gradient);
-            color: white;
-            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-            margin-bottom: 4rem;
-        }
-
-        .avatar {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            border: 3px solid rgba(255,255,255,0.2);
-            margin: 1rem auto;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-
-        /* 内容容器 */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* 卡片样式 */
-        .card {
-            background: white;
-            border-radius: 16px;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-        }
-
-        /* 个人信息双栏布局 */
-        .profile-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            margin: 2rem 0;
-        }
-
-        /* 技能进度条 */
-        .skill-bar {
-            height: 12px;
-            background: #eee;
-            border-radius: 6px;
-            margin: 1rem 0;
-            overflow: hidden;
-        }
-
-        .skill-progress {
-            height: 100%;
-            background: var(--gradient);
-            border-radius: 6px;
-            transition: width 1s ease-in-out;
-        }
-
-        /* 时间轴样式 */
-        .timeline {
-            position: relative;
-            padding-left: 30px;
-            margin: 2rem 0;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 5px;
-            top: 0;
-            height: 100%;
-            width: 2px;
-            background: var(--accent);
-        }
-
-        .timeline-item {
-            position: relative;
-            margin-bottom: 2rem;
-            padding-left: 30px;
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -8px;
-            top: 5px;
-            width: 16px;
-            height: 16px;
-            background: white;
-            border: 3px solid var(--accent);
-            border-radius: 50%;
-        }
-
-        /* 联系方式样式 */
-        .contact-list {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .contact-item {
-            text-align: center;
-            padding: 1rem;
-            transition: transform 0.3s;
-        }
-
-        .contact-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .contact-icon {
-            font-size: 2rem;
-            color: var(--accent);
-            margin-bottom: 0.5rem;
-        }
-
-        @media (max-width: 768px) {
-            .profile-grid {
-                grid-template-columns: 1fr;
-            }
-            .hero {
-                padding: 4rem 1rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>就職サイト</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <header class="hero">
-        <img src="avatar.jpg" alt="王小明" class="avatar">
-        <h1>王小明</h1>
-        <p>交互设计师 | 用户体验专家</p>
-    </header>
 
-    <div class="container">
-        <!-- 个人信息 -->
-        <div class="card">
-            <h2>👨💻 个人介绍</h2>
-            <div class="profile-grid">
-                <div>
-                    <h3>基本信息</h3>
-                    <ul>
-                        <li><i class="fas fa-birthday-cake"></i> 28岁</li>
-                        <li><i class="fas fa-map-marker-alt"></i> 上海</li>
-                        <li><i class="fas fa-graduation-cap"></i> 清华大学 设计学硕士</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>兴趣爱好</h3>
-                    <ul>
-                        <li><i class="fas fa-palette"></i> 数字绘画</li>
-                        <li><i class="fas fa-camera-retro"></i> 街头摄影</li>
-                        <li><i class="fas fa-book-open"></i> 交互设计研究</li>
-                    </ul>
-                </div>
-            </div>
+  <!-- ナビバー -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo"> 就職サイト</a>
+      <ul class="nav-links">
+        <li><a href="#about">趣味</a></li>
+        <li><a href="#activities">イベント</a></li>
+        <li><a href="#skills">スキル</a></li>
+        <li><a href="#jobs">就職活動</a></li>
+        <li><a href="#contact">連絡先</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-container">
+      <div class="hero-left">
+        <img src="avatar.jpg" alt="" class="avatar">
+      </div>
+      <div class="hero-right">
+        <p class="subtitle">ゼン 　シャンジュ</p>
+        <h1 class="myname">曾　憲居 <br>ZENG XIANJU</h1>
+
+        <ul class="profile-info">
+          <li>📅 25岁</li>
+          <li>📍 東京都練馬区在住</li>
+          <li>🎓 東京ITプログラミング＆会計専門学校杉並校</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- メイン -->
+    <div class="main-content">
+      <div id="about" class="card">
+        <h2>🏍️ 趣味</h2>
+        <div class="profile-grid">
+          <div>
+
+
+          </div>
         </div>
+      </div>
 
-        <!-- 技能展示 -->
-        <div class="card">
-            <h2>🚀 专业技能</h2>
-            <div>
-                <h3>用户体验设计 <span>90%</span></h3>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: 90%"></div>
-                </div>
-
-                <h3>Figma原型设计 <span>85%</span></h3>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: 85%"></div>
-                </div>
-
-                <h3>前端开发 <span>75%</span></h3>
-                <div class="skill-bar">
-                    <div class="skill-progress" style="width: 75%"></div>
-                </div>
-            </div>
+      <!-- イベント -->
+      <div id="activities" class="card">
+        <h2>🌟 イベント</h2>
+        <div class="activity-grid">
+          <div class="activity-card">
+            <h3>スピーチ大会</h3>
+            <p>2023</p>
+          </div>
+          <div class="activity-card">
+            <h3>学園祭</h3>
+            <p>2024</p>
+          </div>
         </div>
+      </div>
 
-        <!-- 求职活动 -->
-        <div class="card">
-            <h2>📅 就职进展</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>收到Offer - ABC科技</h3>
-                    <p>2023-08-25</p>
-                    <p>高级交互设计师岗位</p>
-                </div>
-                <div class="timeline-item">
-                    <h3>最终面试 - XYZ设计</h3>
-                    <p>2023-08-20</p>
-                    <p>用户体验团队面试</p>
-                </div>
-            </div>
+      <div id="skills" class="card">
+        <h2>💼 スキル</h2>
+        <div class="skill-list">
+          <div class="skill-item">
+            <h3>Java</h3>
+            <progress value="92" max="100"></progress>
+          </div>
+          <div class="skill-item">
+            <h3>HTML/CSS</h3>
+            <progress value="88" max="100"></progress>
+          </div>
+          <div class="skill-item">
+            <h3>SQL</h3>
+            <progress value="85" max="100"></progress>
+          </div>
         </div>
+      </div>
 
-        <!-- 联系方式 -->
-        <div class="card">
-            <h2>📱 联系我</h2>
-            <div class="contact-list">
-                <div class="contact-item">
-                    <i class="fas fa-envelope contact-icon"></i>
-                    <p>wangxm@design.com</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-linkedin contact-icon"></i>
-                    <p>/wangxiaoming</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-github contact-icon"></i>
-                    <p>github.com/wxm</p>
-                </div>
-            </div>
-        </div>
+
     </div>
 
-    <script>
-        // 进度条动画
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelectorAll('.skill-progress').forEach(progress => {
-                progress.style.width = progress.parentElement.previousElementSibling.querySelector('span').textContent;
-            });
-        });
-    </script>
+    <!-- 右 -->
+    <div class="sidebar">
+      <div id="jobs" class="card large-card">
+        <h2>📈 就職活動</h2>
+        <div class="timeline-scroll">
+          <div class="timeline">
+            <div class="timeline-item">
+              <p>2025-02-27</p>
+              <p>クレイトソリューションズ株式会社</p>
+            </div>
+            <div class="timeline-item">
+              <p>2025-02-27</p>
+              <p>Mamol株式会社‐面接</p>
+            </div>
+            <div class="timeline-item">
+              <p>2025-02-21</p>
+              <p>ビッグハンズ株式会社‐一次面接</p>
+            </div>
+            <div class="timeline-item">
+              <p>2025--</p>
+              <p>ロジステイードソリューションズ株式会社</p>
+            </div>
+            <div class="timeline-item">
+              <p>2025--</p>
+              <p>富士ソフト株式会社</p>
+            </div>
+            <div class="timeline-item">
+              <p>2025--</p>
+              <p>株式会社</p>
+            </div>
+            <div class="timeline-item">
+              <p>2025--</p>
+              <p>株式会社</p>
+            </div>
+            <div class="timeline-item">
+              <p>2025--</p>
+              <p>株式会社</p>
+            </div>
+            <div class="timeline-item">
+              <p>2025--</p>
+              <p>株式会社</p>
+            </div>
+            <div class="timeline-item">
+              <p>2025--</p>
+              <p>株式会社</p>
+            </div>
+            <div class="timeline-item">
+              <p>2025--</p>
+              <p>株式会社</p>
+            </div>
+            <div class="timeline-item">
+              <p>2025--</p>
+              <p>株式会社</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 連絡先 -->
+      <div id="contact" class="card">
+        <h2>📞 連絡先</h2>
+        <div class="contact-list">
+          <p><i class="fas fa-envelope"></i> xianjuzeng0305@gmail.com</p>
+          <p><i class="fab fa-line"></i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
+
 </html>
