@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>就職サイト</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="responsive.css"/>
+  <link rel="stylesheet" href="responsive.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
@@ -47,14 +47,43 @@
   <div class="container">
     <!-- メイン -->
     <div class="main-content">
-      <div id="about" class="card">
+      <div id="shumi" class="card shumi">
         <h2>🏍️ 趣味</h2>
-        <div class="profile-grid">
-          <div>
 
+        <button class="shumi-tab active" onclick="showContent('shumi-ryouri',this)">料理</button>
+        <button class="shumi-tab" onclick="showContent('shumi-bike',this)">バイク</button>
+        <button class="shumi-tab" onclick="showContent('shumi-satuei',this)">撮影</button>
 
+        <div id="shumi-ryouri" class="shumi-content">
+          <div class="shumi-images">
+            <div class="shumi-image">
+              <img src="images/shumi/ryouri/甘醤油角煮.gif" alt="角煮">
+              <p>甘醤油角煮</p>
+            </div>
+            <div class="shumi-image">
+              <img src="images/shumi/ryouri/ステーキ１.jpg" alt="厚切りステーキ">
+              <p>厚切りステーキ</p>
+            </div>
+            <div class="shumi-image">
+              <img src="images/shumi/ryouri/牛カレーオムライス.jpg" alt="牛カレーオムライス">
+              <p>牛カレーオムライス</p>
+            </div>
+            <div class="shumi-image">
+              <img src="images/shumi/ryouri/牛すじと大根の煮込み、豚の角煮、にんにくの芽の豚炒め.jpg" alt="牛すじと大根の煮込み、豚の角煮、にんにくの芽の豚炒め">
+              <p>牛すじと大根の煮込み、豚の角煮、にんにくの芽の豚炒め</p>
+            </div>
+            
           </div>
         </div>
+
+        <div id="shumi-bike" class="shumi-content">
+          
+        </div>
+
+        <div id="shumi-satuei" class="shumi-content">
+          
+        </div>
+
       </div>
 
       <!-- イベント -->
@@ -101,15 +130,15 @@
           <div class="timeline">
             <div class="timeline-item">
               <p>2025-02-27</p>
-              <p>クレイトソリューションズ株式会社</p>
+              <p>クレイトソリューションズ株式会社　説明会</p>
             </div>
             <div class="timeline-item">
               <p>2025-02-27</p>
-              <p>Mamol株式会社‐面接</p>
+              <p>Mamol株式会社　面接</p>
             </div>
             <div class="timeline-item">
               <p>2025-02-21</p>
-              <p>ビッグハンズ株式会社‐一次面接</p>
+              <p>ビッグハンズ株式会社　一次面接</p>
             </div>
             <div class="timeline-item">
               <p>2025--</p>
@@ -161,6 +190,8 @@
       </div>
     </div>
   </div>
+
+  <script src="script.js"></script>
 
 </body>
 
