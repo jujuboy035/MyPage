@@ -44,4 +44,14 @@
         padding-left: 0;
     }
 
+    .shumi-image img{
+        width: 100%;
+    }
+
+    .shumi-image{
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    
 }
