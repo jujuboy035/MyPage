@@ -44,12 +44,15 @@
         padding-left: 0;
     }
 
+
     .shumi-image img{
         width: 100%;
     }
 
     .shumi-image{
-        width: 100%;
+        width: 48%;
+        font-size: 12px;
     }
     
+
 }
