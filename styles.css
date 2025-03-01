@@ -96,10 +96,9 @@ body {
 .hero {
     background: var(--gradient);
     color: white;
-    padding-top: 5rem;
+    padding-top: 4rem;
     display: flex;
     justify-content: center;
-    /* 让整个 .hero-container 居中 */
 }
 
 .hero-container {
@@ -136,7 +135,6 @@ body {
     margin-right: 15px;
     font-size: 1rem;
 }
-
 
 .card {
     background: white;
@@ -183,4 +181,43 @@ body {
     padding: 0.5rem;
     border-left: 4px solid var(--accent);
     border-radius: 8px;
+}
+
+.shumi-tab{
+    padding: 5px 25px;
+    margin-right: 5px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.shumi-tab.active{
+    background-color: #6c5ce7;
+    color: white;
+    font-weight: bold;
+}
+
+.shumi-content{
+    padding: 10px;
+    margin-top: 10px;
+    display: none;
+}
+
+/*　写真のところ　*/
+.shumi-images{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.shumi-image img{
+    width: 200px;
+    border-radius: 10px;
+}
+
+.shumi-image{
+    margin-top: 10px;
+    width: 210px;
+    text-align: center;
 }
