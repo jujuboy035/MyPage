@@ -185,7 +185,7 @@ body {
 
 .shumi-tab{
     padding: 5px 25px;
-    margin-right: 5px;
+    margin-left: 5px;
     border-radius: 15px;
     border: none;
     background-color: #ddd;
@@ -200,24 +200,26 @@ body {
 }
 
 .shumi-content{
-    padding: 10px;
-    margin-top: 10px;
+    padding: 0.5vw;
+    margin-top: 0.5vw;
     display: none;
 }
 
 /*　写真のところ　*/
 .shumi-images{
+    padding-left: 2%;
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
+    font-size: 1.3vw;
 }
 .shumi-image img{
-    width: 200px;
+    width: 100%;
     border-radius: 10px;
 }
 
 .shumi-image{
-    margin-top: 10px;
-    width: 210px;
+    margin-top: 0.8rem;
+    width: 31%;
     text-align: center;
 }
