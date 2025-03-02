@@ -1,13 +1,13 @@
 function showContent(id, button) {
-    document.querySelectorAll('.shumi-content').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.Hobbies-content').forEach(el => el.style.display = 'none');
 
     document.getElementById(id).style.display = 'block';
 
-    document.querySelectorAll('.shumi-tab').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.Hobbies-tab').forEach(btn => btn.classList.remove('active'));
 
     button.classList.add('active');
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    showContent('shumi-ryouri', document.querySelector('.shumi-tab'));
+    showContent('Hobbies-cook', document.querySelector('.Hobbies-tab'));
 });

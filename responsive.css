@@ -45,11 +45,11 @@
     }
 
 
-    .shumi-image img{
+    .-image img{
         width: 100%;
     }
 
-    .shumi-image{
+    .-image{
         width: 48%;
         font-size: 12px;
     }

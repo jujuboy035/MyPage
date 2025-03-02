@@ -183,7 +183,7 @@ body {
     border-radius: 8px;
 }
 
-.shumi-tab{
+.Hobbies-tab{
     padding: 5px 25px;
     margin-left: 5px;
     border-radius: 15px;
@@ -193,32 +193,32 @@ body {
     font-size: 16px;
 }
 
-.shumi-tab.active{
+.Hobbies-tab.active{
     background-color: #6c5ce7;
     color: white;
     font-weight: bold;
 }
 
-.shumi-content{
+.Hobbies-content{
     padding: 0.5vw;
     margin-top: 0.5vw;
     display: none;
 }
 
 /*　料理写真のところ　*/
-.shumi-images{
+.Hobbies-images{
     padding-left: 2%;
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
     font-size: 1.2rem;
 }
-.shumi-image img{
+.Hobbies-image img{
     width: 100%;
     border-radius: 10px;
 }
 
-.shumi-image{
+.Hobbies-image{
     margin-top: 0.5rem;
     width: 31%;
     text-align: center;
@@ -249,15 +249,15 @@ body {
     background-size: 130px;
 }
 .fe-exam{
-    background-image: url(images/skills/基本情報技術者試験.png);
+    background-image: url("images/skills/基本情報技術者試験.png");
     background-size: 100%;
 }
 .html{
-    background-image: url(images/skills/html.svg);
+    background-image: url("images/skills/html.svg");
 }
 .sql{
-    background-image: url(images/skills/sql.svg);
+    background-image: url("images/skills/sql.svg");
 }
 .java{
-    background-image: url(images/skills/java.svg);
+    background-image: url("images/skills/java.svg");
 }
