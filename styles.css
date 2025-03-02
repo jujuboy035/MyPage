@@ -245,7 +245,7 @@ body {
 }
 
 .jlpt{
-    background-image: url(images/skills/jlpt.png);
+    background-image: url("images/skills/jlpt.png");
     background-size: 130px;
 }
 .fe-exam{
