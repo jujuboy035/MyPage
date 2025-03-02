@@ -245,19 +245,19 @@ body {
 }
 
 .jlpt{
-    background-image: url(/images/skills/jlpt.png);
+    background-image: url(images/skills/jlpt.png);
     background-size: 130px;
 }
 .fe-exam{
-    background-image: url(/images/skills/基本情報技術者試験.png);
+    background-image: url(images/skills/基本情報技術者試験.png);
     background-size: 100%;
 }
 .html{
-    background-image: url(/images/skills/html.svg);
+    background-image: url(images/skills/html.svg);
 }
 .sql{
-    background-image: url(/images/skills/sql.svg);
+    background-image: url(images/skills/sql.svg);
 }
 .java{
-    background-image: url(/images/skills/java.svg);
+    background-image: url(images/skills/java.svg);
 }
