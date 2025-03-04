@@ -229,6 +229,7 @@ body {
 .skill-list{
     display: flex;
     flex-wrap: wrap;
+    padding-left: 2%;
     gap: 1rem;
 }
 
@@ -250,13 +251,16 @@ body {
 }
 .fe-exam{
     background-image: url("images/skills/基本情報技術者試験.png");
-    background-size: 100%;
+    background-size: 100px;
 }
 .html{
     background-image: url("images/skills/html.svg");
 }
 .sql{
     background-image: url("images/skills/sql.svg");
+}
+.c-language{
+    background-image: url("images/skills/c-language.png");
 }
 .java{
     background-image: url("images/skills/java.svg");

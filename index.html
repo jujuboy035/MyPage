@@ -17,15 +17,16 @@
     <div class="nav-container">
       <a href="#" class="logo"> 就職サイト</a>
       <ul class="nav-links">
-        <li><a href="#about">趣味</a></li>
-        <li><a href="#activities">イベント</a></li>
         <li><a href="#skills">スキル</a></li>
+        <li><a href="#Hobbies">趣味</a></li>
+        <li><a href="#activities">イベント</a></li>
         <li><a href="#jobs">就職活動</a></li>
         <li><a href="#contact">連絡先</a></li>
       </ul>
     </div>
   </nav>
 
+  <!--個人情報-->
   <header class="hero">
     <div class="hero-container">
       <div class="hero-left">
@@ -44,9 +45,83 @@
     </div>
   </header>
 
+  <!--中身-->
   <div class="container">
-    <!-- メイン -->
+    <!-- 左側 -->
     <div class="main-content">
+
+      <!-- スキル -->
+      <div id="skills" class="card">
+        <h2>💼 スキル</h2>
+        <div class="skill-list">
+
+          <div class="skill-item">
+            <div class="skill-progress  jlpt">
+              <svg width="100" height="100" viewBox="0 0 100 100"></svg>
+            </div>
+            <h4>JLPT N1</h4>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-progress  fe-exam">
+              <svg width="100" height="100" viewBox="0 0 100 100"></svg>
+            </div>
+            <h4>基本情報技術者</h4>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-progress html">
+              <svg width="100" height="100" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#e6e6e6" stroke-width="10" />
+
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#6c5ce7" stroke-width="10" stroke-dasharray="282.6"
+                  stroke-dashoffset="90" transform="rotate(-90, 50, 50)" />
+              </svg>
+            </div>
+            <h4>HTML/CSS</h4>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-progress sql">
+              <svg width="100" height="100" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#e6e6e6" stroke-width="10" />
+
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#8673F3" stroke-width="10" stroke-dasharray="282.6"
+                  stroke-dashoffset="141" transform="rotate(-90, 50, 50)" />
+              </svg>
+            </div>
+            <h4>SQL</h4>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-progress c-language">
+              <svg width="100" height="100" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#e6e6e6" stroke-width="10" />
+
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#A29BFE" stroke-width="10" stroke-dasharray="282.6"
+                  stroke-dashoffset="160" transform="rotate(-90, 50, 50)" />
+              </svg>
+            </div>
+            <h4>C言語</h4>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-progress java">
+              <svg width="100" height="100" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#e6e6e6" stroke-width="10" />
+
+                <circle cx="50" cy="50" r="45" fill="none" stroke="#A29BFE" stroke-width="10" stroke-dasharray="282.6"
+                  stroke-dashoffset="180" transform="rotate(-90, 50, 50)" />
+              </svg>
+            </div>
+            <h4>Java</h4>
+          </div>
+          
+
+        </div>
+      </div>
+
+      <!-- 趣味 -->
       <div id="Hobbies" class="card Hobbies">
         <h2>🏍️ 趣味</h2>
 
@@ -54,6 +129,7 @@
         <button class="Hobbies-tab" onclick="showContent('Hobbies-bike',this)">バイク</button>
         <button class="Hobbies-tab" onclick="showContent('Hobbies-satuei',this)">撮影</button>
 
+        <!--　調理　-->
         <div id="Hobbies-cook" class="Hobbies-content">
           <div class="Hobbies-images">
             <div class="Hobbies-image">
@@ -84,12 +160,12 @@
           </div>
         </div>
 
+        <!--　バイク　-->
         <div id="Hobbies-bike" class="Hobbies-content">
-
         </div>
 
+        <!--　撮影　-->
         <div id="Hobbies-satuei" class="Hobbies-content">
-
         </div>
 
       </div>
@@ -108,65 +184,6 @@
           </div>
         </div>
       </div>
-
-      <div id="skills" class="card">
-        <h2>💼 スキル</h2>
-        <div class="skill-list">
-
-          <div class="skill-item">
-            <div class="skill-progress  jlpt">
-              <svg width="100" height="100" viewBox="0 0 100 100"></svg>
-            </div>
-            <h4>JLPT N1</h4>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-progress  fe-exam">
-              <svg width="100" height="100" viewBox="0 0 100 100"></svg>
-            </div>
-            <h4>基本技術者試験</h4>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-progress html">
-              <svg width="100" height="100" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="45" fill="none" stroke="#e6e6e6" stroke-width="10" />
-
-                <circle cx="50" cy="50" r="45" fill="none" stroke="#6c5ce7" stroke-width="10" stroke-dasharray="282.6"
-                  stroke-dashoffset="90" transform="rotate(-90, 50, 50)" />
-              </svg>
-            </div>
-            <h4>HTML/CSS</h4>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-progress sql">
-              <svg width="100" height="100" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="45" fill="none" stroke="#e6e6e6" stroke-width="10" />
-
-                <circle cx="50" cy="50" r="45" fill="none" stroke="#8673F3" stroke-width="10" stroke-dasharray="282.6"
-                  stroke-dashoffset="141" transform="rotate(-90, 50, 50)" />
-              </svg>
-            </div>
-            <h4>SQL</h4>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-progress java">
-              <svg width="100" height="100" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="45" fill="none" stroke="#e6e6e6" stroke-width="10" />
-
-                <circle cx="50" cy="50" r="45" fill="none" stroke="#A29BFE" stroke-width="10" stroke-dasharray="282.6"
-                  stroke-dashoffset="180" transform="rotate(-90, 50, 50)" />
-              </svg>
-            </div>
-            <h4>Java</h4>
-          </div>
-          
-
-        </div>
-      </div>
-
 
     </div>
 
