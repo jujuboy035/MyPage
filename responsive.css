@@ -54,5 +54,13 @@
         font-size: 12px;
     }
     
+    .activity-grid{
+        display: block;
+    }
 
+    .activity-grid img{
+        height: auto;
+        width: 100%;
+        border-radius: 10px;
+    }
 }

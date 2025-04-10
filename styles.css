@@ -265,3 +265,15 @@ body {
 .java{
     background-image: url("images/skills/java.svg");
 }
+
+
+.activity-grid img{
+    height: 300px;
+    border-radius: 10px;
+}
+.activity-grid{
+    width: 90%;
+    display: flex;
+    flex: 0 1 auto;
+    gap: 1rem;
+}
