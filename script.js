@@ -23,6 +23,7 @@ function drinkInvite() {
         ">
             <div style="
                 width:90%;
+                height:100vh;
                 max-width:400px;
                 background:white;
                 padding:25px 20px;
@@ -84,5 +85,5 @@ document.addEventListener("DOMContentLoaded", function () {
     showContent('Hobbies-cook', document.querySelector('.Hobbies-tab'));
     setTimeout(() => {
         drinkInvite();
-    }, 1000);  
+    }, 300);  
 });
