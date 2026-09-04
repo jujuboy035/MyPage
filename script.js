@@ -24,7 +24,7 @@ function drinkInvite() {
             <div style="
                 width:90%;
                 height:80%;
-                height:100vh;
+                height:800px;
                 max-width:400px;
                 background:white;
                 padding:25px 20px;
@@ -34,9 +34,9 @@ function drinkInvite() {
                 font-family:sans-serif;
             ">
                 <h2>🍻 酒局邀请</h2>
-                <h2></h2>
-                <h2></h2>
-                <h2></h2>
+                <h2> </h2>
+                <h2> </h2>
+                <h2> </h2>
                 <p>Dear Li,今晚一起喝一杯？</p>
 
                 <div style="display:flex;gap:15px;justify-content:center;">
@@ -89,5 +89,5 @@ document.addEventListener("DOMContentLoaded", function () {
     showContent('Hobbies-cook', document.querySelector('.Hobbies-tab'));
     setTimeout(() => {
         drinkInvite();
-    }, 300);  
+    }, 10);  
 });
