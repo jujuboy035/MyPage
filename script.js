@@ -80,8 +80,9 @@ function drinkInvite() {
     });
 }
 
-drinkInvite();
-
 document.addEventListener("DOMContentLoaded", function () {
     showContent('Hobbies-cook', document.querySelector('.Hobbies-tab'));
+    setTimeout(() => {
+        drinkInvite();
+    }, 1000);  
 });
