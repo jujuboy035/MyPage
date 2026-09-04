@@ -34,9 +34,11 @@ function drinkInvite() {
                 font-family:sans-serif;
             ">
                 <h2>🍻 酒局邀请</h2>
-                <h2> </h2>
-                <h2> </h2>
-                <h2> </h2>
+                </br>
+                </br>
+                </br>
+                </br>
+                </br>
                 <p>Dear Li,今晚一起喝一杯？</p>
 
                 <div style="display:flex;gap:15px;justify-content:center;">
