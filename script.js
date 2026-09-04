@@ -23,6 +23,7 @@ function drinkInvite() {
         ">
             <div style="
                 width:90%;
+                height:80%;
                 height:100vh;
                 max-width:400px;
                 background:white;
@@ -33,6 +34,7 @@ function drinkInvite() {
                 font-family:sans-serif;
             ">
                 <h2>🍻 酒局邀请</h2>
+                </br>
                 <p>Dear Li,今晚一起喝一杯？</p>
 
                 <div style="display:flex;gap:15px;justify-content:center;">
