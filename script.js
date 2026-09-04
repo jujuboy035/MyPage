@@ -39,6 +39,9 @@ function drinkInvite() {
                 </br>
                 </br>
                 <p>Dear Li,今晚一起喝一杯？</p>
+                </br>
+                </br>
+                </br>
 
                 <div style="display:flex;gap:15px;justify-content:center;">
                     <button id="yesBtn" style="
