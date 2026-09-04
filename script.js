@@ -22,8 +22,8 @@ function drinkInvite() {
             z-index:99999;
         ">
             <div style="
-                width:75%;
-                max-width:320px;
+                width:90%;
+                max-width:400px;
                 background:white;
                 padding:25px 20px;
                 border-radius:18px;
