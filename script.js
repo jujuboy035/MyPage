@@ -1,6 +1,3 @@
-alert("JS is ok");
-
-
 function showContent(id, button) {
     document.querySelectorAll('.Hobbies-content').forEach(el => el.style.display = 'none');
 
