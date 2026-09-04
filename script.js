@@ -24,7 +24,7 @@ function drinkInvite() {
             <div style="
                 width:90%;
                 height:80%;
-                height:800px;
+                max-height:800px;
                 max-width:400px;
                 background:white;
                 padding:25px 20px;
